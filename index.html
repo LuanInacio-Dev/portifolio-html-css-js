@@ -19,6 +19,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 <body>
     
@@ -41,7 +43,7 @@
 
    <!--hero-->
    <section class="hero" id="home">
-     <div class="main-content">
+     <div class="main-content" data-aos="fade-in">
        <h4>Olá, Pessoal</h4>
             <h1>Eu sou <span>Luan Inácio</span></h1>
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque veritatis dignissimos omnis nobis dolorum, tempora officia, nulla atque voluptatem a similique, saepe molestias obcaecati velit ipsum eligendi laudantium suscipit.</p>
@@ -52,16 +54,16 @@
                     <a href="#"><i class="ri-youtube-fill"></i></a>
       </div>
             <div class="main-btn"></div>
-                    <a href="#" class="btn" style="color: aliceblue;">Contrate-me</a>
+                    <a href="#" class="btn" style="color: aliceblue;">Quem sou</a>
                     <a href="https://docs.google.com/document/d/16TXTWdFCO53nGzA9siaihY_6xcKM9Ku7/edit?rtpof=true" class="btn2" style="color: beige;">Dowload CV</a>
             </div>
    </section>
       <!--abolt-->
    <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
              <img src="img/about.jpg" >
         </div>
-         <div class="about-text">
+         <div class="about-text" data-aos="zoom-in-up">
                <h2> Sou <span>Programador</span> <br>& web Developer</h2>
                <div class="exp-area">
                   <p class="exp">
@@ -95,10 +97,10 @@
           <!--Serviços-->
    <section class="services" id="services">
      
-             <div class="center-text">
+             <div class="center-text" data-aos="fade-in-up">
                 <h2>Meus <span>Serviços</span></h2>
              </div>
-      <div class="services-content">
+      <div class="services-content" data-aos="zoom-in-up">
                <div class="box">
                 <img src="img/s-1.svg" alt="">
                       <h3>UI/UX Designer</h3>
@@ -131,10 +133,10 @@
    </section>  
 <!--portifolio-->
     <section class="portfolio" id="portfolio">
-      <div class="center-text">
+      <div class="center-text" ata-aos="fade-down">
          <h2>Meu <span>Portfolio</span></h2>
       </div>
-      <div class="portfolio-content">
+      <div class="portfolio-content"ata-aos="fade-in-up">
          <div class="row">
             <img src="img/port-2.jpg" alt="">
                <div class="main-row">
@@ -199,10 +201,10 @@
     </section>
     <!--Contato-->
     <section class="contact" id="contact"></section>
-    <div class="center-text">
+    <div class="center-text" ata-aos="fade-down">
       <h2>Contrate<span>Me</span></h2>
        </div>
-          <div class="contact-form">
+          <div class="contact-form" ata-aos="fade-in">
             <form action="actions">
               <input type="text" placeholder="Seu nome" required>
               <input type="email" placeholder="Email de acesso.." required>
@@ -223,5 +225,12 @@
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+             offset : 300,
+             duration: 1400,
+      });
+    </script>
 </body>
 </html>
